@@ -1,7 +1,8 @@
 <?php
 
 
-// 1. Intitialiser les zones dynamiques: $content
+// 1. Intitialiser les zones dynamiques: $title et $content
+$title = "";
 $content = "Aucun contenu ne correspond à votre requête.";
 
 
