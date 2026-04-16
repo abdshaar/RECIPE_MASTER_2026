@@ -2,19 +2,21 @@
             <section class="relative mb-6">
                 <img
                     class="w-full h-96 object-cover"
-                    src="https://source.unsplash.com/1600x900/?recipe"
-                    alt="Featured Recipe Image" />
+                    src="<?php echo $randomRecipe['picture']; ?>"
+                    alt="<?php echo $randomRecipe['name']; ?>" />
                 <div
                     class="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-gray-900 to-transparent">
                     <h1 class="text-3xl font-bold mb-2 text-white">
-                        Nom de la recette en vedette
+                        <?php echo $randomRecipe['name']; ?>
+                        
                     </h1>
                     <div class="flex items-center mb-4">
                         <span class="text-yellow-500 mr-1"><i class="fas fa-star"></i></span>
                         <span class="text-white">4.9</span>
                     </div>
                     <p class="text-gray-300 mb-4">
-                        Description de la recette en vedette...
+                        <?php echo $randomRecipe['description']; ?>
+                        
                     </p>
                     <div class="flex items-center mb-4">
                         <span class="text-gray-400 mr-2">Par Jean Dupont</span>
@@ -35,15 +37,15 @@
                         class="bg-white rounded-lg overflow-hidden shadow-lg relative">
                         <img
                             class="w-full h-48 object-cover"
-                            src="https://source.unsplash.com/480x360/?recipe"
-                            alt="Recipe Image" />
+                            src="<?php echo $randomRecipe['picture']; ?>"
+                            alt="<?php echo $randomRecipe['name']; ?>" />
                         <div class="p-4">
-                            <h3 class="text-xl font-bold mb-2">Nom de la recette</h3>
+                            <h3 class="text-xl font-bold mb-2"><?php echo $randomRecipe['name']; ?> </h3>
                             <div class="flex items-center mb-2">
                                 <span class="text-yellow-500 mr-1"><i class="fas fa-star"></i></span>
                                 <span>4.5</span>
                             </div>
-                            <p class="text-gray-600">Description courte de la recette...</p>
+                            <p class="text-gray-600"><?php echo $randomRecipe['description']; ?></p>
                             <div class="flex items-center mt-4">
                                 <span class="text-gray-700 mr-2">Par Marie Durand</span>
                                 <span class="text-gray-500"><i class="fas fa-comment"></i> 8 commentaires</span>
@@ -61,15 +63,15 @@
                         class="bg-white rounded-lg overflow-hidden shadow-lg relative">
                         <img
                             class="w-full h-48 object-cover"
-                            src="https://source.unsplash.com/480x360/?recipe"
-                            alt="Recipe Image" />
+                            src="<?php echo $randomRecipe['picture']; ?>"
+                            alt="<?php echo $randomRecipe['name']; ?>" />
                         <div class="p-4">
-                            <h3 class="text-xl font-bold mb-2">Nom de la recette</h3>
+                            <h3 class="text-xl font-bold mb-2"><?php echo $randomRecipe['name']; ?></h3>
                             <div class="flex items-center mb-2">
                                 <span class="text-yellow-500 mr-1"><i class="fas fa-star"></i></span>
                                 <span>4.5</span>
                             </div>
-                            <p class="text-gray-600">Description courte de la recette...</p>
+                            <p class="text-gray-600"><?php echo $randomRecipe['description']; ?></p>
                             <div class="flex items-center mt-4">
                                 <span class="text-gray-700 mr-2">Par Marie Durand</span>
                                 <span class="text-gray-500"><i class="fas fa-comment"></i> 8 commentaires</span>
@@ -86,15 +88,15 @@
                         class="bg-white rounded-lg overflow-hidden shadow-lg relative">
                         <img
                             class="w-full h-48 object-cover"
-                            src="https://source.unsplash.com/480x360/?recipe"
-                            alt="Recipe Image" />
+                            src="<?php echo $randomRecipe['picture']; ?>"
+                            alt="<?php echo $randomRecipe['name']; ?>" />
                         <div class="p-4">
-                            <h3 class="text-xl font-bold mb-2">Nom de la recette</h3>
+                            <h3 class="text-xl font-bold mb-2"><?php echo $randomRecipe['name']; ?></h3>
                             <div class="flex items-center mb-2">
                                 <span class="text-yellow-500 mr-1"><i class="fas fa-star"></i></span>
                                 <span>4.5</span>
                             </div>
-                            <p class="text-gray-600">Description courte de la recette...</p>
+                            <p class="text-gray-600"><?php echo $randomRecipe['description']; ?></p>
                             <div class="flex items-center mt-4">
                                 <span class="text-gray-700 mr-2">Par Marie Durand</span>
                                 <span class="text-gray-500"><i class="fas fa-comment"></i> 8 commentaires</span>
