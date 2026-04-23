@@ -18,3 +18,6 @@ function truncate($text, $limit = 100)
 
 
 ?>
+
+
+

@@ -17,3 +17,13 @@ function findOneByRand(PDO $conn): array
     return $rs->fetch(PDO::FETCH_ASSOC);
 }
 
+function findManyByRand(PDO $conn): array
+{
+    $sql = "SELECT *
+            FROM recipes
+            ORDER BY rand()
+            LIMIT 3;";
+            
+    $rs = $conn->query($sql);
+    return $rs->fetchAll(PDO::FETCH_ASSOC);
+}
